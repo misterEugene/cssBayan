@@ -26,6 +26,7 @@ img {
   color: #fff;
   background-color: #F07427;
   cursor: pointer;
+  position: relative;
 }
 
 .bayan {
@@ -37,6 +38,17 @@ img {
 .bayan-input {
   appearance: none;
   position: absolute;
+}
+
+.bayan-square {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  transform: translateY(-50%);
 }
 
 .bayan-img {
@@ -55,4 +67,10 @@ img {
 .bayan-input:checked ~ .bayan-title {
   margin: 0;
 } 
+
+.bayan-input:checked ~ .bayan-title .bayan-square{
+  transform: translateY(-50%) rotate(45deg);
+}
+
+
 
