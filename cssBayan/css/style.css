@@ -28,14 +28,16 @@ img {
   margin-bottom: 5px;
   padding: 15px 10px;
   color: #fff;
-  background-color: #F07427;
+  background-color: #888;
   position: relative;
+  transition: all .2s ease-out;
 }
 
 .bayan {
   max-width: 1000px;
   margin: 25px auto;
   padding: 0 15px;
+  cursor: pointer;
 }
 
 .bayan-input {
@@ -59,6 +61,10 @@ img {
   opacity: 1;
 }
 
+.bayan:hover .bayan-title{
+  background-color: #F07427;
+}
+
 .bayan-img {
   height: 0;
   max-height: 300px;
@@ -72,8 +78,14 @@ img {
   padding: 15px 0;
 } 
 
-.bayan-input:checked ~ .bayan-title {
+.bayan-input:checked ~ .bayan-content .bayan-title {
   margin: 0;
+  background-color: #F07427;
+} 
+
+.bayan-content:hover .bayan-title {
+  margin: 0;
+  background-color: #F07427;
 } 
 
 .bayan-input:checked ~ .bayan-content .bayan-square{
