@@ -49,12 +49,13 @@ img {
   width: 15px;
   background-color: #fff;
   transform: translateY(-50%);
+  transition: all .2s ease-out;
 }
 
 .bayan-img {
   height: 0;
   max-height: 300px;
-  transition: all .1s ease-out;
+  transition: all .2s ease-out;
   background-color: #fff;
   padding: 0;
 }
@@ -71,6 +72,16 @@ img {
 .bayan-input:checked ~ .bayan-title .bayan-square{
   transform: translateY(-50%) rotate(45deg);
 }
+
+.bayan-title:hover ~ .bayan-img {
+  height: 300px;
+  padding: 15px 0;
+} 
+
+.bayan-title:hover .bayan-square{
+  transform: translateY(-50%) rotate(45deg);
+}
+
 
 
 
