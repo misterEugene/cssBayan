@@ -18,14 +18,17 @@ img {
   margin: 0 auto;
 }
 
+.bayan-content {
+  cursor: pointer;
+  display: block;
+}
+
 .bayan-title {
   font-size: 28px;
   margin-bottom: 5px;
   padding: 15px 10px;
-  display: block;
   color: #fff;
   background-color: #F07427;
-  cursor: pointer;
   position: relative;
 }
 
@@ -60,7 +63,7 @@ img {
   padding: 0;
 }
 
-.bayan-input:checked ~ .bayan-img {
+.bayan-input:checked ~ .bayan-content .bayan-img {
   height: 300px;
   padding: 15px 0;
 } 
@@ -69,16 +72,16 @@ img {
   margin: 0;
 } 
 
-.bayan-input:checked ~ .bayan-title .bayan-square{
+.bayan-input:checked ~ .bayan-content .bayan-square{
   transform: translateY(-50%) rotate(45deg);
 }
 
-.bayan-title:hover ~ .bayan-img {
+.bayan-content:hover .bayan-img {
   height: 300px;
   padding: 15px 0;
 } 
 
-.bayan-title:hover .bayan-square{
+.bayan-content:hover .bayan-square{
   transform: translateY(-50%) rotate(45deg);
 }
 
