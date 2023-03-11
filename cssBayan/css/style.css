@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #282828;
+  line-height: 1.5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  height: 100%;
+  max-height: 100%;
+
+  display: block;
+  margin: 0 auto;
+}
+
+.bayan-title {
+  font-size: 28px;
+  margin-bottom: 5px;
+  padding: 15px 10px;
+  display: block;
+  color: #fff;
+  background-color: #F07427;
+  cursor: pointer;
+}
+
+.bayan {
+  max-width: 1000px;
+  margin: 25px auto;
+  padding: 0 15px;
+}
+
+.bayan-input {
+  appearance: none;
+  position: absolute;
+}
+
+.bayan-img {
+  height: 0;
+  max-height: 300px;
+  transition: all .1s ease-out;
+  background-color: #fff;
+  padding: 0;
+}
+
+.bayan-input:checked ~ .bayan-img {
+  height: 300px;
+  padding: 15px 0;
+} 
+
+.bayan-input:checked ~ .bayan-title {
+  margin: 0;
+} 
+
