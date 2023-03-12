@@ -95,6 +95,11 @@ img {
 }
 
 @media (hover:hover) {
+
+  .bayan-square {
+    opacity: 0;
+  }
+
   .bayan-content:hover .bayan-img {
     height: 30rem;
     padding: 2rem 0;
